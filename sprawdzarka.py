@@ -18,7 +18,7 @@ for testCase in glob.glob(testsPath+"*.in"):
         print(successMessage)
         successfulTests = successfulTests+1
     else:
-        errorMessage = "OH, NO TEST CASE #" + str(testCaseNumber) + " FAILED!!!"
+        errorMessage = "OH NO, TEST CASE #" + str(testCaseNumber) + " FAILED!!!"
         print(errorMessage)
 successRatio = successfulTests/testCaseNumber * 100.0
 print("RESULT - " + str(successfulTests)+"/"+str(testCaseNumber)+"("+str(successRatio)+"%)")
