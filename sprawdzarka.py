@@ -22,6 +22,9 @@ argumenty = parser_argumentow.parse_args()
 pliki_wejsciowe = argumenty.sciezka+"/*.in"
 plik_wykonywalny = argumenty.plik
 
+for file in glob.glob("*.cpp"):
+	os.system("g++ " + file + " -o " + plik_wykonywalny)
+
 ###############################
 
 oczekiwany_wynik = "test1.in"
